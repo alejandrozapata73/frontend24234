@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+   
+
+}
+
+.caja1 {
+   
+    color: white;
+    background-color: black;
+    /* overflow-x: auto; */
+    position: fixed;
+    left: 15px;
+    right: 15px;
+    bottom: 10px;
+    border-radius: 80px;
+    
+    
+
+}
+
+.caja2 {
+
+    color: white;
+    text-align: center;
+    background-color: red;
+    
+    
+
+}
+
+.caja3 {
+
+    background-color: green;
+
+}
+
+/* .caja4 {
+
+    border-radius: 80px;
+
+} */

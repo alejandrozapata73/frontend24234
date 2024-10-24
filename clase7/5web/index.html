@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>CAC-Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="/">
+                    <!-- aqui icono de fontawesome -->
+                    <i class="fas fa-film"></i>
+                    <span class="logo-text"> 
+                        CAC - Movies
+                    </span>
+                </a>
+            </div>   
+
+            <ul class="nav-links">
+                <li><a href="#popular">Tendencias</a>  </li>
+                <li><a href="./templates/register.html">Registrarse</a></li>
+                <li>
+                    <a class="btn-cac" href="#">
+                        <!-- aqui icono de fontawesome -->
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">
+                            Iniciar Sesión
+                        </span>    
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="app">
+            <section id="banner" class="d-flex">
+                <div class="card-banner container">
+                    <h1>Películas y series ilimitadas y mucho más.</h1>
+                    <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
+                    <a href="./templates/register.html" class="btn-cac">Registrate</a>
+                </div>
+            </section>
+            <section id="search" class="container">
+                <h2 class="search-title">¿Qué estas buscando para ver?</h2>
+                <input type="text" class="input-search" placeholder="Buscar...">
+            </section>
+            <section id="popular">
+                <div class="container">
+                    <h2 class="h2-subtitle">Las tendencias de hoy</h2>
+                    <movies-grid></movies-grid>
+                </div>
+            </section>
+            <section id="top-rated">
+                <div class="container">
+                    <h2 class="h2-subtitle">Las más aclamadas</h2>
+                    <movies-flex></movies-flex>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda</a>
+        <a href="./templates/crud-movies.html">CRUD Peliculas</a>
+    </footer>
+    <script src="./static/js/index.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./static/js/fetch-movies-vue.js"></script>
+
+</body>
+</html>
