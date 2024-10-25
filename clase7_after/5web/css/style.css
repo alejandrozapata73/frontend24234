@@ -14,14 +14,14 @@ body {
 
 header {
 
-    background-image: ;
+   
     margin-bottom: 15px;
 
 }
 
 nav {
     display: flex;
-    height: 120px;
+    height: 40px;
 }
 
 .nav-links {
@@ -45,5 +45,10 @@ nav {
 
 main {
 
+    background-image: url(../img/banner-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
     margin-bottom: 50px;
+    align-items: center;
 }
