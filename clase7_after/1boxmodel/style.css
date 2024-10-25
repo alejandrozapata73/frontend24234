@@ -1,51 +1,49 @@
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 div {
-
-    width: 150px;
-    height: 150px;
-    background-color: aquamarine;
-   
-
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 50px;
+    margin-bottom: 50px
 }
 
 .caja1 {
-   
-    color: white;
-    background-color: black;
-    /* overflow-x: auto; */
-    position: fixed;
-    left: 15px;
-    right: 15px;
-    bottom: 10px;
-    border-radius: 80px;
+    display: inline-block;
+    position: absolute;
     
-    
+}
+
+.caja1:hover {
+
+    left: 150px;
+    top: 150px;
 
 }
 
 .caja2 {
-
-    color: white;
-    text-align: center;
     background-color: red;
-    
-    
+    display: inline-block;
 
 }
+
 
 .caja3 {
-
-    background-color: green;
-
+    width: 70px;
+    height: 20px;
+    margin-top: 80px;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
 }
-
-/* .caja4 {
-
-    border-radius: 80px;
-
-} */
