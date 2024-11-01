@@ -3,8 +3,7 @@
     height: 600px;
     background-color: antiquewhite;
     border: solid black 2px;
-    display: flex;
-    justify-content: space-evenly;
+    display: flex
     
     
 }
@@ -16,5 +15,51 @@
     border: solid red 2px;
     background-color: aqua;
    
+    
 
 }
+
+.caja1 {
+
+    background-color: black;
+
+}
+
+
+
+
+/* probando media querys */
+@media (max-width: 720px){
+
+    .container {
+
+        background-color: blue;
+        flex-direction: column;
+       
+    }
+
+    .items {
+
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 420px){
+
+    .container {
+
+        background-color: blue;
+        flex-direction: column;
+       
+    }
+
+    .items {
+
+        display: none;
+    }
+
+
+}
+
