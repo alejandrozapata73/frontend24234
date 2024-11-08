@@ -1,0 +1,1 @@
+console.log("hola soy el script 2")
