@@ -26,6 +26,23 @@ console.log(vidas)
 vidas = vidas-TORTUGAS
 
 
+console.log("app de mercado libre")
+
+
+var saldo = 30000
+
+const ZAPATA = 15000
+const fuente = 15000
+
+
+var stockZapata = 300
+stockZapata = 300 - TORTUGAS
+
+var descuento = 15
+
+saldo = saldo - ZAPATA - fuente 
+
+
 
 
 
