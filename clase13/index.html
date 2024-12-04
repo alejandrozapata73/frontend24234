@@ -16,11 +16,11 @@
     <div class="container">
 
 
-        <h1 id="titulo" onclick="alert('hola probando eventos')">Eventos!!</h1>
+        <h1 id="titulo">Eventos!!</h1>
 
-        <h2 onclick="contador()" >Hola Talento!!!</h2>
+        <h2 onclick="contador()" id="elemento2">Hola Talento!!!</h2>
 
-        <button>Contador</button>
+        <button onclick="llamarInput()">Renom</button>
 
 
 
@@ -103,14 +103,14 @@
 
       <input id="inputB" type="text">
 
-      <button onclick="sumarInput()" type="button" class="btn btn-primary">Sumar</button>
+      <button onclick="mostrarValor()" type="button" class="btn btn-primary">Sumar</button>
 
       <h2 id="valorInput" for=""></h2>
 
     </div>
 
     <div class="container">
-      <h2>Prueba Listener</h2>
+      <h2 id="pruebaListener">Prueba Listener</h2>
 
       <label for="">Texto y tomar inputs</label>
     <input type="text" id="input1" value="123">
