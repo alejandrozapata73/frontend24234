@@ -177,6 +177,78 @@ inputA.addEventListener("change", function(){
 
     console.log(numero)
 
+    if(numero>5){
+        cartel.classList.add("oscuro")
+    }
 })
+
+
+let nombre = "maria"
+let nombres = ["maria","juan"]
+
+
+//objetos literales
+
+let nombreObjeto = {
+
+    //key-----valor
+    nombre : "Alex",
+    apellido: "ubago",
+    edad: 29,
+    profesion: "cantante",
+    cantar: function(){
+        console.log("puedo cantar lalalal")
+    }
+}
+
+console.log(nombreObjeto.nombre)
+
+//localStorage...
+
+localStorage.clear()
+
+//......................key............valor
+
+
+let capturaInputLS = document.getElementById("usuarioLS")
+
+let nombreUsuario = "Alejandro Local Storage"
+
+// let correo = "alejandroZapata73@out"
+
+localStorage.setItem("usuarioTalento",nombreUsuario)
+// localStorage.setItem("usuarioCorreo",correo)
+
+// localStorage.setItem("usuarioTalento","papa")
+
+console.log(localStorage.getItem("usuarioTalento"))
+
+
+let nombreLS = localStorage.getItem("usuarioTalento")
+
+capturaInputLS.textContent = nombreLS
+
+
+const producto = {
+    nombre: "oreo",
+    precio: 1500
+}
+
+localStorage.setItem("productoA",producto.nombre)
+localStorage.setItem("precioProductoA",producto.precio)
+
+
+
+localStorage.clear()
+
+// Swal.fire({
+//     title: "هل تريد الاستمرار؟",
+//     icon: "question",
+//     iconHtml: "؟",
+//     confirmButtonText: "نعم",
+//     cancelButtonText: "لا",
+//     showCancelButton: true,
+//     showCloseButton: true
+//   });
 
 
