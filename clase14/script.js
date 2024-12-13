@@ -238,8 +238,9 @@ localStorage.setItem("productoA",producto.nombre)
 localStorage.setItem("precioProductoA",producto.precio)
 
 
-
-localStorage.clear()
+if(button){
+    localStorage.clear()
+}
 
 // Swal.fire({
 //     title: "هل تريد الاستمرار؟",
