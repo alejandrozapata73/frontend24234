@@ -1,0 +1,14 @@
+[
+    {
+        "nombre":"alejandro",
+        "puesto":"profesor"
+    },
+    {
+        "nombre":"german",
+        "puesto":"estudiante"
+    },
+    {
+        "nombre":"marcos",
+        "puesto":"tutor"
+    }
+]

@@ -124,7 +124,6 @@ div.innerHTML = "<li>hola</li>"
 
     tdNombres.appendChild(div)
     
-
    
 }
 
