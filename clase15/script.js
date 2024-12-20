@@ -137,9 +137,11 @@ fetch("empleados.json")
         // console.log(elemento)
         console.log(elemento.nombre)
 
+        //crear Elemento
         const contenedorCreado = document.createElement("div")
 
-        contenedorCreado.innerHTML = `
+        contenedorCreado.innerHTML =
+         `
 
             <h4>${elemento.nombre}</h4>
             
@@ -164,3 +166,96 @@ fetch("empleados.json")
 
 
 */
+
+
+
+
+let usuarioPlataforma= "Martin G"
+let apellidoPlataforma = "fernandez"
+
+console.log("hola el usuario es: " + usuarioPlataforma + "y su apellido es: " + apellidoPlataforma + " ")
+
+console.log("hola el usuario es: " , usuarioPlataforma)
+
+console.log(`hola el usuario es: ${usuarioPlataforma} y su apellido es ${apellidoPlataforma}`)
+
+let botonAparecerDatos = document.getElementById("botonMagico")
+
+console.log(botonAparecerDatos)
+
+//repasando listener......("evento","function Anonima / funcion tradicional")
+
+function mostrarAlert(){
+    alert("hola mostrando el Alert de prueba...CallBack")
+}
+
+botonAparecerDatos.addEventListener("click", insertarDatos)
+
+
+// botonExtra.addEventListener("click", mostrarAlert)
+
+
+/*
+
+
+addEventListener("click", "hola")
+addEventListener("click", "hola",12)
+addEventListener("click", "hola",true)
+
+addEventListener("click", mostrarAlert)
+
+*/
+
+
+
+//conexion con Random
+
+
+
+let contenedorRan = document.getElementById("contenedorPersonajes2")
+console.log(contenedorRan)
+
+
+
+function insertarDatos() {
+//funcion fech me permite contectar con una API-end Point
+fetch("https://randomuser.me/api/")
+//tranformo la info en formato json
+.then((respuesta)=>respuesta.json())
+//en datos tengo ya la estructura para mostrar en formato objeto
+.then((datos)=>{
+    console.log("******Mostrando Random****")
+    console.log(datos)
+    console.log(datos.results)
+    console.log(datos.results[0].name)
+    console.log(datos.results[0].name.first)
+    // console.log(datos.results)
+    // console.log(datos.results[0])
+    // console.log(datos.results[0].name)
+
+   
+       
+
+        //crear Elemento
+        const contenedorCreado = document.createElement("div")
+
+        contenedorCreado.innerHTML =
+         `
+
+            <h4>${datos.results[0].name.first}</h4>
+            <img src="${datos.results[0].picture.large
+            }">
+
+            
+
+            `
+            ;
+
+            contenedorRan.appendChild(contenedorCreado)
+
+
+    })
+
+}
+
+
